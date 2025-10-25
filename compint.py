@@ -1,7 +1,9 @@
+#a biginner code to compute compund interest
 duration= input("enter duration (yearly/monthly/halfyearly/quarterly): ")
 principal= float(input("enter principal amt: "))
 rate = 0.06
 timeyears= 4
+#y=the number of times compounded
 if duration=="yearly":
     y=1
 if duration=="monthly":
@@ -12,5 +14,3 @@ if duration=="halfyearly":
     y=2
 ci= principal*(1+(rate/y))**(timeyears*y)-principal
 print("compound interest is:", ci)
-
-
