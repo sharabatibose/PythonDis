@@ -1,7 +1,11 @@
-class prey:
+class Animal:
+    def __init__(self, does_eat, does_sleep,):
+        does_eat= True
+        does_sleep= True
+class prey(Animal): #inherits Animal characteristics, then adds characteristics of its own
     def flee(self):
         print("fleeing")
-class predator:
+class predator(Animal):
     def hunt(self):
         print("hunting")
 class Rabbit(prey):
@@ -22,5 +26,6 @@ whitewolf.hunt()
 
 tilapia=Tilapia()
 print("tilapia is "+tilapia.lookfierce()) 
+
 
 
